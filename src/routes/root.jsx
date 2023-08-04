@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom' /* to tell the Root route
+import { Outlet, Link } from 'react-router-dom' /* to tell the Root route
 where we want it to render it's childRoutes */
  
 export default function Root() {
@@ -32,10 +32,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <a href={`/contacts/1`}>Your Name</a>
+              <Link to={`/contacts/1`}>Your Name</Link>
             </li>
             <li>
-              <a href={`/contacts/2`}>Your Friend</a>
+              <Link to={`/contacts/2`}>Your Friend</Link>
             </li>
           </ul>
         </nav>
